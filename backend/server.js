@@ -30,6 +30,9 @@ app.get('/', (req, res) => {
 });
 
 app.use('/admin', adminRoute);
+// localhost:3001/admin/ to get all data admin
+// localhost:3001/admin/register to register admin
+// localhost:3001/admin/login to admin login
 app.use('/author', authorRoute);
 app.use('/book', bookRoute);
 app.use('/category', categoryRoute);
