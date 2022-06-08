@@ -1,16 +1,12 @@
 import express from 'express';
-import {
-    getAllAdmin,
-    adminRegister,
-    adminLogin,
-} from '../../controllers/adminController.js';
+import adminController from '../../controllers/adminController.js';
 
 const router = express.Router();
 
-router.route('/').get(getAllAdmin);
+router.route('/').get(adminController.getAllAdmin);
 
-router.route('/register').post(adminRegister);
+router.route('/register').post(adminController.adminRegister);
 
-router.route('/login').post(adminLogin);
+router.route('/login').post(adminController.adminLogin);
 
 export default router;

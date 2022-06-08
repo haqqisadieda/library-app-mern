@@ -51,4 +51,4 @@ const adminLogin = (req, res) => {
     });
 };
 
-export { getAllAdmin, adminRegister, adminLogin };
+export default { getAllAdmin, adminRegister, adminLogin };
